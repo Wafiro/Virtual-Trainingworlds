@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="TestUss.uss" />
+    <ui:VisualElement>
+        <ui:Button text="Continue" display-tooltip-when-elided="true" binding-path="MenuClose" focusable="true" tooltip="Return to the game" />
+        <ui:Button text="Quit" display-tooltip-when-elided="true" binding-path="Exit" tooltip="Exit the game" focusable="true" />
+        <ui:Label text="Settings" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+    </ui:VisualElement>
+    <ui:ScrollView>
+        <ui:Slider picking-mode="Ignore" label="Slider1" value="42" high-value="100" binding-path="Slider1" />
+        <ui:Toggle label="Toggle1" binding-path="Toggle1" />
+    </ui:ScrollView>
+</ui:UXML>
