@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jojom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jojom\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_prototype.2113945266.00" t="ExcludeRecursive" />
+    <e p="E:\git repos\prototype" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="ImportedAssets" t="Include">
+          <e p="KajamansRoads" t="Include">
+            <e p="FileNamesDescription.txt" t="Include" />
+            <e p="Free" t="Include">
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="MoveCube.cs" t="Include" />
+        </e>
+        <e p="UI Toolkit" t="Include">
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+        <e p="UserInterface" t="Include">
+          <e p="SettingsUSS.uss" t="Include" />
+          <e p="SettingsUXML.uxml" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="prototype.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
