@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="CamereTransitions" t="Include">
           <e p="CameraMovement.cs" t="Include" />
+          <e p="CameraTransition.cs" t="Include" />
         </e>
         <e p="ImportedAssets" t="Include">
           <e p="KajamansRoads" t="Include">
