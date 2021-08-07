@@ -5,7 +5,11 @@ using UnityEngine.InputSystem;
 public class CameraTransition: MonoBehaviour
 {
 
-    [SerializeField] private InputAction action;
+    [SerializeField] private InputAction one;
+    [SerializeField] private InputAction two;
+    [SerializeField] private InputAction three;
+    [SerializeField] private InputAction four;
+    [SerializeField] private InputAction five;
 
     private Animator _animator;
     private int cameraID = 0;
@@ -18,17 +22,29 @@ public class CameraTransition: MonoBehaviour
 
     private void OnEnable()
     {
-        action.Enable();
+        one.Enable();
+        two.Enable();
+        three.Enable();
+        four.Enable();
+        five.Enable();
     }
 
     private void OnDisable()
     {
-        action.Disable();
+        one.Disable();
+        two.Disable();
+        three.Disable();
+        four.Disable();
+        five.Disable();
     }
 
     void Start()
     {
-        action.performed += _ => SwitchState();
+        one.performed += _ => SwitchState(1);
+        two.performed += _ => SwitchState(2);
+        three.performed += _ => SwitchState(3);
+        four.performed += _ => SwitchState(4);
+        five.performed += _ => SwitchState(5);
     }
 
    
@@ -38,22 +54,32 @@ public class CameraTransition: MonoBehaviour
     }
 
 
-    private void SwitchState()
+    private void SwitchState(int input)
     {
-        if (cameraID == 0)
+        switch (input)
         {
-            _animator.Play("onCrashed");
-            cameraID = 1;
+            case 1:
+                _animator.Play("onCrashed");
+                Debug.Log("Crashed");
+                break;
+            case 2:
+                _animator.Play("onBody");
+                Debug.Log("Body");
+                break;
+            case 3:
+                _animator.Play("onBackOfCar");
+                Debug.Log("Kofferraum");
+                break;
+            case 4:
+                _animator.Play("onWarndreieck");
+                Debug.Log("Warndreieck");
+                break;
+            case 5:
+                _animator.Play("onPhone");
+                Debug.Log("Phone");
+                break;
         }
-        else if (cameraID == 1)
-        {
-            _animator.Play("onBody");
-            cameraID = 2;
-        }
-        else
-        {
-            _animator.Play("onCrashed");
-            cameraID = 1;
-        }
+        
+        
     }
 }
