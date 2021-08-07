@@ -14,6 +14,8 @@ public class ButtonInterface : MonoBehaviour
     public Button buttonLeft;
     public Button buttonRight;
     
+    public Text info;
+    
         public String B1_one;
         public String B1_two;
         public String B1_three;
@@ -28,6 +30,8 @@ public class ButtonInterface : MonoBehaviour
         public String B3_two;
         public String B3_three;
         public String B3_four;
+        
+        public String infoText;
 
         public bool B1_show;
         public bool B2_show;
@@ -41,7 +45,7 @@ public class ButtonInterface : MonoBehaviour
         
         public class Situation
         {
-            public String B1, B2, B3;
+            public String B1, B2, B3, info;
             public bool B1_s, B2_s, B3_s, BLeft_s, BRight_s;
 
             public Situation(String B1, String B2, String B3, bool B1_s, bool B2_s, bool B3_s, bool BLeft_s, bool BRight_s)
@@ -55,8 +59,24 @@ public class ButtonInterface : MonoBehaviour
                 this.BLeft_s = BLeft_s;
                 this.BRight_s = BRight_s;
             }
+            
+            public Situation(String B1, String B2, String B3, String info, bool B1_s, bool B2_s, bool B3_s, bool BLeft_s, bool BRight_s)
+            {
+                this.B1 = B1;
+                this.B2 = B1;
+                this.B3 = B1;
+                this.B1_s = B1_s;
+                this.B2_s = B2_s;
+                this.B3_s = B3_s;
+                this.BLeft_s = BLeft_s;
+                this.BRight_s = BRight_s;
+
+            
+            }
 
         }
+        
+        
         // Start is called before the first frame update
     void Start()
     {
@@ -84,5 +104,31 @@ public class ButtonInterface : MonoBehaviour
         button3.GetComponent<Text>().text = situations[id].B3;
     }
     
+    public void buttonAction(String info, Button button)
+    {
+        button.gameObject.SetActive(false);
+        infoText = info;
+        this.info.gameObject.SetActive(true);
+    }
+
+    public void disappearButton(Button b1)
+    {
+        b1.gameObject.SetActive(false);
+    }
+
+    public void clearAll()
+    {
+        disappearButton(button1);
+        disappearButton(button2);
+        disappearButton(button3);
+        disappearButton(buttonLeft);
+        disappearButton(buttonRight);
+        info.gameObject.SetActive(false);
+    }
+    
     //Todo: Dissapear certain textes.
+    
+    //Todo: Clear all
+    
+    //Todo: global buttons
 }

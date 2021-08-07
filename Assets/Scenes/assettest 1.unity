@@ -1097,6 +1097,7 @@ MonoBehaviour:
   button3: {fileID: 1543954679}
   buttonLeft: {fileID: 373016777}
   buttonRight: {fileID: 2063506030}
+  info: {fileID: 0}
   B1_one: TEST ONEONE
   B1_two: TEST ONE2
   B1_three: Test ONE 3
@@ -1109,6 +1110,7 @@ MonoBehaviour:
   B3_two: 
   B3_three: 
   B3_four: 
+  infoText: 
   B1_show: 0
   B2_show: 0
   B3_show: 0
