@@ -29,7 +29,7 @@ public class CameraMovement : MonoBehaviour
             selected = timelines[index];
         }
         
-        
+        Debug.Log("here");
         director.Play(selected);
     }
 
