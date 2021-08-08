@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\ignac\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\ignac\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_prototype.2108000146.00" t="ExcludeRecursive" />
-    <e p="C:\Users\ignac\Desktop\Uni\SS21\Virtuelle\prototype" t="IncludeRecursive">
+    <e p="C:\Users\jojom\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jojom\.Rider2019.3\system\resharper-host\Local\Transient\ReSharperHost\v193\SolutionCaches\_prototype.2113945266.00" t="ExcludeRecursive" />
+    <e p="E:\git repos\prototype" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="CamereTransitions" t="Include">
@@ -21,6 +21,9 @@
             <e p="Free" t="Include">
               <e p="ReadMe.txt" t="Include" />
             </e>
+          </e>
+          <e p="Smartphone" t="Include">
+            <e p="StandardColorMask.shader" t="Include" />
           </e>
         </e>
         <e p="InputTest.cs" t="Include" />
