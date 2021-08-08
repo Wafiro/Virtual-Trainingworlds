@@ -1,36 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour
 {
 
+    [SerializeField] private InputAction x;
     public PlayableDirector director;
-    public List<TimelineAsset> timelines;
 
-    public void Play()
+    private void OnEnable()
     {
-        director.Play();
+        x.Enable();
+    }
+
+    private void OnDisable()
+    {
+       x.Disable();
+    }
+    
+    private void Awake()
+    {
+        director = GetComponent<PlayableDirector>();
+    }
+
+    void Start()
+    {
+        x.performed += _ => Play();
+
     }
 
 
-    public void PlayTimeline(int index)
+    void Play()
     {
-        TimelineAsset selected;
-
-        if (timelines.Count <= index)
-        {
-            selected = timelines[timelines.Count - 1];
-        }
-        else
-        {
-            selected = timelines[index];
-        }
-        
-        Debug.Log("here");
-        director.Play(selected);
+        director.Play();
     }
 
 }
