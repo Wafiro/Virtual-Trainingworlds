@@ -93,15 +93,21 @@ public class ButtonInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(button1.GetComponentInChildren<Text>().text);
+
+        if (Input.GetKeyDown("space"))
+        {
+            GETLoadSituation();
+        }
     }
 
     public void GETLoadSituation()
     {
+        Debug.Log("im hereeee");
         id++;
-        button1.GetComponent<Text>().text = situations[id].B1;
-        button2.GetComponent<Text>().text = situations[id].B2;
-        button3.GetComponent<Text>().text = situations[id].B3;
+        button1.GetComponentInChildren<Text>().text = situations[id].B1;
+        button2.GetComponentInChildren<Text>().text = situations[id].B2;
+        button3.GetComponentInChildren<Text>().text = situations[id].B3;
     }
     
     public void buttonAction(String info, Button button)
