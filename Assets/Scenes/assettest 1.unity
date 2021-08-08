@@ -1186,7 +1186,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: HELO HOLA
 --- !u!222 &1118650106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1476,8 +1476,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c8fd194d7c8274797fd1f2f0847d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
   director: {fileID: 0}
-  timelines: []
 --- !u!320 &1308875940
 PlayableDirector:
   m_ObjectHideFlags: 0
