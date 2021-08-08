@@ -10,6 +10,11 @@
           <e p="CameraMovement.cs" t="Include" />
           <e p="CameraTransition.cs" t="Include" />
         </e>
+        <e p="DialogueStuff" t="Include">
+          <e p="DialogueObject.cs" t="Include" />
+          <e p="DialogueUI.cs" t="Include" />
+          <e p="TypeWriter.cs" t="Include" />
+        </e>
         <e p="ImportedAssets" t="Include">
           <e p="KajamansRoads" t="Include">
             <e p="FileNamesDescription.txt" t="Include" />
