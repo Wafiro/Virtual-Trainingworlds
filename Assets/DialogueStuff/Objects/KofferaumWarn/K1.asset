@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: K1
   m_EditorClassIdentifier: 
   dialogue:
-  - Du hast due Warnweste angezogen
+  - Du hast die Warnweste angezogen
   _responses:
   - responseText: Warndreieck nehmen
     _dialogueObject: {fileID: 11400000, guid: 77680066884cf9d4bbdd64f3155484ed, type: 2}
+    id: 0

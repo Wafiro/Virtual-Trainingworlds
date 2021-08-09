@@ -57,7 +57,7 @@ public class ResponseHandler : MonoBehaviour
     }
 
     private void OnPickedResponse(Response response)
-    {
+    { 
         Debug.Log("clicked");
        responseBox.gameObject.SetActive(true);
 
@@ -115,6 +115,8 @@ public class ResponseHandler : MonoBehaviour
                    break;
                case 41:
                    //Stabile Seitenlage
+                   _cameraTransition.bodyOnFloor.GetComponent<Animator>().SetTrigger("Seitenlage");
+                   _dialogueUI.ShowDialogue(response.DialogueObject);
                    break;
                case 49:
                    PersonFertig = true;
@@ -127,6 +129,9 @@ public class ResponseHandler : MonoBehaviour
                case 59:
                    _dialogueUI.ShowDialogue(response.DialogueObject);
                    TelefonFertig = true;
+                   break;
+               case 99:
+                   //do ending stuff here
                    break;
 
            }

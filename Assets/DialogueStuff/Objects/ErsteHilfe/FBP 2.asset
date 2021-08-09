@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FBP 2
   m_EditorClassIdentifier: 
   dialogue:
-  - Die Person hat ein stabiles Puls
+  - Die Person hat einen stabilen Puls
   _responses:
   - responseText: Atemwege freimachen
     _dialogueObject: {fileID: 11400000, guid: f82e79c38f3ee4b4bbd2a20413dd8bfb, type: 2}

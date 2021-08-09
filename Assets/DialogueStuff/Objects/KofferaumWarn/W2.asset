@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: W2
   m_EditorClassIdentifier: 
   dialogue:
-  - In Welcher Distanz willst du das Warndreieck aufstellen?
+  - In welcher Entfernung willst du das Warndreieck aufstellen?
   _responses:
   - responseText: 50m
     _dialogueObject: {fileID: 11400000, guid: 329e32fb6907872499f0ae47ad93cebe, type: 2}

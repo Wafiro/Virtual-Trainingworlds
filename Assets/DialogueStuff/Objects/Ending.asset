@@ -18,4 +18,4 @@ MonoBehaviour:
   _responses:
   - responseText: Simulation beenden
     _dialogueObject: {fileID: 0}
-    id: 0
+    id: 99
