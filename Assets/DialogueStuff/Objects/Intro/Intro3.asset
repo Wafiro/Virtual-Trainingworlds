@@ -10,11 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: Intro
+  m_Name: Intro3
   m_EditorClassIdentifier: 
   dialogue:
-  - "Es scheint so, als w\xE4re davorne ein Auto gegen einen Baum gefahren."
+  - "Du h\xE4lst den Wagen an, schaltest den Warnblinker ein und steigst aus. Was
+    jetzt?"
   _responses:
-  - responseText: Weiter
-    _dialogueObject: {fileID: 11400000, guid: ba306e36039a93349961df2272be640b, type: 2}
-    id: 10
+  - responseText: Zum Kofferraum
+    _dialogueObject: {fileID: 11400000, guid: 4f31f06ac7abd0c4fa9be32b0864f9f7, type: 2}
+    id: 20
+  - responseText: Zum Unfallauto
+    _dialogueObject: {fileID: 0}
+    id: 30
+  - responseText: Telefon
+    _dialogueObject: {fileID: 0}
+    id: 0

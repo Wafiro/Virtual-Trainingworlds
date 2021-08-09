@@ -10,12 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: K0
+  m_Name: A3
   m_EditorClassIdentifier: 
-  dialogue:
-  - Hier ist dien Kofferraum
-  _responses:
-  - responseText: Warnweste anziehen
-    _dialogueObject: {fileID: 11400000, guid: cded2fc174a7f3d489285863ce80a4f2, type: 2}
-  - responseText: Warndreieck nehmen
-    _dialogueObject: {fileID: 11400000, guid: a279303e2820019459626bd0fbe52881, type: 2}
+  dialogue: []
+  _responses: []

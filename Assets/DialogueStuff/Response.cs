@@ -8,6 +8,7 @@ public class Response
 {
     [SerializeField] private string responseText;
     [SerializeField] private DialogueObject _dialogueObject;
+    public int id;
 
     public string ResponseText => responseText;
 

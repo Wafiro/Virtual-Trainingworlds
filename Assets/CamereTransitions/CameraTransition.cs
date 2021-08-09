@@ -13,7 +13,6 @@ public class CameraTransition: MonoBehaviour
 
     private Animator _animator;
     private int cameraID = 0;
-    public bool warndreieck = false;
     public bool body = false;
     public bool car = true;
     public bool kofferraum = true;
@@ -62,7 +61,7 @@ public class CameraTransition: MonoBehaviour
     }
 
 
-    private void SwitchState(int input)
+    public void SwitchState(int input)
     {
         switch (input)
         {
@@ -82,7 +81,6 @@ public class CameraTransition: MonoBehaviour
                 Debug.Log("Kofferraum");
                 break;
             case 4:
-                if (!warndreieck) break;
                 _animator.Play("onWarndreieck");
                 Debug.Log("Warndreieck");
                 break;
