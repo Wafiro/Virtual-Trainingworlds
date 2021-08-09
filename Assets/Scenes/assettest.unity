@@ -290,6 +290,14 @@ MonoBehaviour:
   c: {fileID: 576835220}
   panel: {fileID: 1463658989}
   intro: {fileID: 1308875938}
+  KofferFertig: 0
+  TelefonFertig: 0
+  AutoFertig: 0
+  PersonFertig: 0
+  personEnd: {fileID: 11400000, guid: f11f8e2e977db964da13af084c1120c8, type: 2}
+  kofferEnd: {fileID: 11400000, guid: 00d2257152da04340b6462dea1d14c7f, type: 2}
+  telefonEnd: {fileID: 11400000, guid: 2c847bc135428c04f9cf01a25f5acf68, type: 2}
+  AutoEnd: {fileID: 11400000, guid: 04a1b6b18d655c94090fbd30de3c497a, type: 2}
 --- !u!114 &669206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1950,13 +1958,10 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Five
       m_Flags: 0
-  body: 0
-  car: 1
-  kofferraum: 1
-  phone: 1
   bodyInCar: {fileID: 1276938888}
   bodyOnFloor: {fileID: 163134292}
   dreieck: {fileID: 1997270819}
+  telefon: {fileID: 1031621217}
 --- !u!95 &576835222
 Animator:
   serializedVersion: 3
@@ -1999,13 +2004,7 @@ MonoBehaviour:
   m_AnimatedTarget: {fileID: 576835222}
   m_LayerIndex: 0
   m_ShowDebugText: 0
-  m_ChildCameras:
-  - {fileID: 1261372591}
-  - {fileID: 506733882}
-  - {fileID: 8650625}
-  - {fileID: 1814315298}
-  - {fileID: 1760769235}
-  - {fileID: 364333002}
+  m_ChildCameras: []
   m_Instructions:
   - m_FullHash: 932118739
     m_VirtualCamera: {fileID: 506733882}
@@ -2573,6 +2572,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026209303}
   m_CullTransparentMesh: 1
+--- !u!1 &1031621217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 4e9bb637798979a4ca9e30741b7e2c77, type: 3}
+  m_PrefabInstance: {fileID: 1622338026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1046567774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4503,6 +4507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: smartphone
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4e9bb637798979a4ca9e30741b7e2c77, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4e9bb637798979a4ca9e30741b7e2c77, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5057,7 +5065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6eacdd894a799c14481fdc440d9466dc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997114799595243168, guid: 6eacdd894a799c14481fdc440d9466dc, type: 3}
       propertyPath: m_LocalRotation.w

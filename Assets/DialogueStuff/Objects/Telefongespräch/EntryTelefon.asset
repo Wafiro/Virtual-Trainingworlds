@@ -16,8 +16,8 @@ MonoBehaviour:
   - Who do you wanna call?
   _responses:
   - responseText: 112
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: c33c8b550e36f244c857ce1d1f9313e3, type: 2}
     id: 0
   - responseText: 110
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: bf4797c96cba0aa44a207049add0991e, type: 2}
     id: 0

@@ -15,9 +15,6 @@ MonoBehaviour:
   dialogue:
   - Du hast die Warnweste angezogen und das Warndreieck aufgestellt.
   _responses:
-  - responseText: Zum Unfallauto
-    _dialogueObject: {fileID: 11400000, guid: e0c8b055c6130e64c96d12493308db50, type: 2}
-    id: 30
-  - responseText: Telefonieren
-    _dialogueObject: {fileID: 11400000, guid: fcc8493accf9f634b8762e5f2ad799c9, type: 2}
-    id: 50
+  - responseText: OK
+    _dialogueObject: {fileID: 11400000, guid: 00d2257152da04340b6462dea1d14c7f, type: 2}
+    id: 29

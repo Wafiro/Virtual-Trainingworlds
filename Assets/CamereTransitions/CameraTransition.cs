@@ -12,14 +12,10 @@ public class CameraTransition: MonoBehaviour
     [SerializeField] private InputAction five;
 
     private Animator _animator;
-    private int cameraID = 0;
-    public bool body = false;
-    public bool car = true;
-    public bool kofferraum = true;
-    public bool phone = true;
     public GameObject bodyInCar;
     public GameObject bodyOnFloor;
     public GameObject dreieck;
+    public GameObject telefon;
 
 
     private void Awake()
@@ -66,17 +62,14 @@ public class CameraTransition: MonoBehaviour
         switch (input)
         {
             case 1:
-                if (!car) break;
                 _animator.Play("onCrashed");
                 Debug.Log("Crashed");
                 break;
             case 2:
-                if (!body) break;
                 _animator.Play("onBody");
                 Debug.Log("Body");
                 break;
             case 3:
-                if(!kofferraum) break;
                 _animator.Play("onBackOfCar");
                 Debug.Log("Kofferraum");
                 break;
@@ -85,7 +78,6 @@ public class CameraTransition: MonoBehaviour
                 Debug.Log("Warndreieck");
                 break;
             case 5:
-                if (!phone) break;
                 _animator.Play("onPhone");
                 Debug.Log("Phone");
                 break;

@@ -15,9 +15,6 @@ MonoBehaviour:
   dialogue:
   - Du hebst die Person aus dem Wagen und legst sie achtsam neben dir auf den Boden
   _responses:
-  - responseText: Zur Person
-    _dialogueObject: {fileID: 0}
-    id: 40
-  - responseText: Telefonieren
-    _dialogueObject: {fileID: 0}
-    id: 50
+  - responseText: Weiter
+    _dialogueObject: {fileID: 11400000, guid: 04a1b6b18d655c94090fbd30de3c497a, type: 2}
+    id: 39
