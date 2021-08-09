@@ -9,6 +9,7 @@ using UnityEngine.Playables;
 
 public class ResponseHandler : MonoBehaviour
 {
+
     [SerializeField] private RectTransform responseBox;
     [SerializeField] private RectTransform responseButtonTemplate;
     [SerializeField] private RectTransform responseContainer;
@@ -26,6 +27,7 @@ public class ResponseHandler : MonoBehaviour
     public bool PersonFertig = false;
     public DialogueObject personEnd, kofferEnd, telefonEnd, AutoEnd;
    
+    public Action<Response> onResponse;
 
 
     private void Start()
@@ -64,6 +66,8 @@ public class ResponseHandler : MonoBehaviour
            Destroy(button);
        }
        tempResponseButton.Clear();
+
+        onResponse(response);
 
        if (response.id == 0)
        {
