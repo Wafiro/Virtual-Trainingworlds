@@ -14,6 +14,7 @@
           <e p="DialogueObject.cs" t="Include" />
           <e p="DialogueUI.cs" t="Include" />
           <e p="mini.cs" t="Include" />
+          <e p="MoveButtons.cs" t="Include" />
           <e p="Response.cs" t="Include" />
           <e p="ResponseHandler.cs" t="Include" />
           <e p="TypeWriter.cs" t="Include" />
