@@ -10,6 +10,9 @@ public class DialogueUI : MonoBehaviour
    [SerializeField] private InputAction cont;
    [SerializeField] private TMP_Text textLabel;
    [SerializeField] private DialogueObject testDialogue;
+   private TypeWriter _typeWriter;
+   private ResponseHandler _responseHandler;
+   
    public bool next = false;
 
    private void OnEnable()
@@ -22,8 +25,7 @@ public class DialogueUI : MonoBehaviour
       cont.Disable();
    }
 
-   private TypeWriter _typeWriter;
-   private ResponseHandler _responseHandler;
+   
    
    private void Start()
    {
@@ -55,7 +57,7 @@ public class DialogueUI : MonoBehaviour
 
          if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
          
-         yield return new WaitUntil(() => next);
+         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
          
       }
 
