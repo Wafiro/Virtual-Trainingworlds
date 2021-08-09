@@ -29,7 +29,7 @@ public class DialogueTracker : MonoBehaviour
     private void OnResponse(Response response)
     {
         // Exit if invalid or empty dialogue
-        if (!response.DialogueObject || !response.DialogueObject.HasResponses())
+        if (!response.DialogueObject || !response.DialogueObject.HasResponses)
         {
             return;
         }
@@ -61,45 +61,54 @@ namespace DialogueOrder
         {
             this.current = current;
         }
-        public bool IsCorrect(IReadOnlyList<ulong> order);
+        public abstract bool IsCorrect(IReadOnlyList<ulong> order);
     }
     class RequireBefore : DialogueOrder
     {
-        public RequireBefore(ulong before)
+        public RequireBefore(ulong current, ulong before) :
+            base(current)
         {
             this.before = before;
         }
         public readonly ulong before;
-        override IsCorrect(IReadOnlyList<ulong> order)
+        public override bool IsCorrect(IReadOnlyList<ulong> order)
         {
-            return order.SkipWhile(x => x != before).Contains(current);
+            return order.SkipWhile(x => x != before).Contains(base.current);
         }
     }
     class RequireAfter : DialogueOrder
     {
-        public RequireAfter(ulong current, ulong after)
+        public RequireAfter(ulong current, ulong after) :
+            base(current)
         {
-            base(current);
             this.after = after;
         }
         public readonly ulong after;
-        override IsCorrect(IReadOnlyList<ulong> order)
+        public override bool IsCorrect(IReadOnlyList<ulong> order)
         {
-            return order.SkipWhile(x => x != current).Contains(after);
+            return order.SkipWhile(x => x != base.current).Contains(after);
         }
     }
     class Require : DialogueOrder
     {
-        override IsCorrect(IReadOnlyList<ulong> order)
+        public Require(ulong current) :
+            base(current)
         {
-            return order.Contains(current);
+        }
+        public override bool IsCorrect(IReadOnlyList<ulong> order)
+        {
+            return order.Contains(base.current);
         }
     }
     class Deny : DialogueOrder
     {
-        override IsCorrect(IReadOnlyList<ulong> order)
+        public Deny(ulong current) :
+            base(current)
         {
-            return !order.Contains(current);
+        }
+        public override bool IsCorrect(IReadOnlyList<ulong> order)
+        {
+            return !order.Contains(base.current);
         }
     }
 }
