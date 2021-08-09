@@ -10,17 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: BP 4
+  m_Name: EntryTelefon
   m_EditorClassIdentifier: 
   dialogue:
-  - Die Person liegt mit dem Atemweg frei.
+  - Who do you wanna call?
   _responses:
-  - responseText: "Atemger\xE4usche h\xF6ren und Luftstrom f\xFChlen"
-    _dialogueObject: {fileID: 11400000, guid: f8e6d22a69fb57149863c68a94029a6e, type: 2}
+  - responseText: 112
+    _dialogueObject: {fileID: 0}
     id: 0
-  - responseText: Bewegung des Brustkorps sehen
-    _dialogueObject: {fileID: 11400000, guid: f8e6d22a69fb57149863c68a94029a6e, type: 2}
-    id: 0
-  - responseText: Ansprechen
+  - responseText: 110
     _dialogueObject: {fileID: 0}
     id: 0

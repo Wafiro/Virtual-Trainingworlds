@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: BP 4
+  m_Name: T 1
   m_EditorClassIdentifier: 
   dialogue:
-  - Die Person liegt mit dem Atemweg frei.
+  - "\"Bitte warten Sie, bis eine Leitung verf\xFCgbar ist\""
+  - '"Guten Tag, Feuerwehr- und Rettungsdienst hier."'
   _responses:
-  - responseText: "Atemger\xE4usche h\xF6ren und Luftstrom f\xFChlen"
-    _dialogueObject: {fileID: 11400000, guid: f8e6d22a69fb57149863c68a94029a6e, type: 2}
-    id: 0
-  - responseText: Bewegung des Brustkorps sehen
-    _dialogueObject: {fileID: 11400000, guid: f8e6d22a69fb57149863c68a94029a6e, type: 2}
-    id: 0
-  - responseText: Ansprechen
+  - responseText: "Tut mir Leid, ich habe die falsche Nummer gew\xE4hlt"
     _dialogueObject: {fileID: 0}
+    id: 0
+  - responseText: '"Hallo, ich bin Max Mustermann und hier ist ein Unfall passiert"'
+    _dialogueObject: {fileID: 11400000, guid: 8fd0891462990ee4696643daebe21579, type: 2}
     id: 0
