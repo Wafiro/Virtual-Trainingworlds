@@ -18,5 +18,7 @@ MonoBehaviour:
   _responses:
   - responseText: Ansprechen und anfassen
     _dialogueObject: {fileID: 11400000, guid: 6d2b489e01893ef4bb426029e3f56c25, type: 2}
+    id: 0
   - responseText: Er ist wahrscheinlich tot
-    _dialogueObject: {fileID: 11400000, guid: a279303e2820019459626bd0fbe52881, type: 2}
+    _dialogueObject: {fileID: 11400000, guid: d9b540796d8ddde40aa366fabff95c75, type: 2}
+    id: 0

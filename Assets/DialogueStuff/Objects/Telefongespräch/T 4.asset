@@ -19,5 +19,5 @@ MonoBehaviour:
     _dialogueObject: {fileID: 11400000, guid: 9d9f4010ef4b68b4389af5938b81a976, type: 2}
     id: 0
   - responseText: Es hat sich eine Person schwer verletzt aber er ist bei Bewusstsein
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 2aed9a4160ab7e040a606c1136297380, type: 2}
     id: 0

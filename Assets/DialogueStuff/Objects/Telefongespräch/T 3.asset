@@ -19,5 +19,5 @@ MonoBehaviour:
     _dialogueObject: {fileID: 11400000, guid: 1feba8a5fb3b99141930d27a6c3cd8ed, type: 2}
     id: 0
   - responseText: "Ein Auto ist auf der Landstra\xDFe aus der Bahn geraten"
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 20064e4080189ae4ebe4ba3a0927fb23, type: 2}
     id: 0

@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 7
+  m_Name: FT 4
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Ok, vielen Dank. Kontrollieren Sie falls m\xF6glich den Zustand des Verletzten
-    und leisten Sie wenn ben\xF6tigt Erste Hilfe. Wir werdem bald bei Ihnen sein.\""
+  - Die person ist bewusstlos
   _responses:
-  - responseText: Vielen Dank! Mach ich!
-    _dialogueObject: {fileID: 0}
+  - responseText: Ok
+    _dialogueObject: {fileID: 11400000, guid: 1feba8a5fb3b99141930d27a6c3cd8ed, type: 2}
     id: 0

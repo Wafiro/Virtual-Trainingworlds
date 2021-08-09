@@ -17,5 +17,7 @@ MonoBehaviour:
   _responses:
   - responseText: Kopf nach hinten neigen und Kinn anheben
     _dialogueObject: {fileID: 11400000, guid: 5b6820dc0e056504e823a707ca207d18, type: 2}
+    id: 0
   - responseText: Person aufrecht sitzen lassen
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: b99259c674ae70349a377fd81f734f4a, type: 2}
+    id: 0

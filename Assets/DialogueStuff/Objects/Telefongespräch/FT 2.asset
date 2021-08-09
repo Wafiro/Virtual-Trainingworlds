@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 7
+  m_Name: FT 2
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Ok, vielen Dank. Kontrollieren Sie falls m\xF6glich den Zustand des Verletzten
-    und leisten Sie wenn ben\xF6tigt Erste Hilfe. Wir werdem bald bei Ihnen sein.\""
+  - '"Das bringt uns nicht so viel kannst du es genauer erlautern?"'
   _responses:
-  - responseText: Vielen Dank! Mach ich!
-    _dialogueObject: {fileID: 0}
+  - responseText: Nochmal das selbe sagen
+    _dialogueObject: {fileID: 11400000}
+    id: 0
+  - responseText: "\"Die Unfallstelle ist auf der Landstra\xDFe XYZ zwischen A und
+      B in Richtung B\""
+    _dialogueObject: {fileID: 11400000, guid: 069041882ba0b8d49adb1b8286adaff6, type: 2}
     id: 0
