@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
   m_Name: A2
   m_EditorClassIdentifier: 
-  dialogue: []
-  _responses: []
+  dialogue:
+  - "Du sprichst die Person an, jedoch erh\xE4lst du keine Reaktion"
+  _responses:
+  - responseText: Die Person aus dem Wagen heben
+    _dialogueObject: {fileID: 11400000, guid: 0d405494731474045adcba5c03410820, type: 2}
+    id: 31

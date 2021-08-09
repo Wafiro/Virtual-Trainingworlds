@@ -20,8 +20,8 @@ MonoBehaviour:
     _dialogueObject: {fileID: 11400000, guid: 4f31f06ac7abd0c4fa9be32b0864f9f7, type: 2}
     id: 20
   - responseText: Zum Unfallauto
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: e0c8b055c6130e64c96d12493308db50, type: 2}
     id: 30
   - responseText: Telefon
-    _dialogueObject: {fileID: 0}
-    id: 0
+    _dialogueObject: {fileID: 11400000, guid: fcc8493accf9f634b8762e5f2ad799c9, type: 2}
+    id: 50

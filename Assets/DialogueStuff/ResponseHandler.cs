@@ -20,16 +20,13 @@ public class ResponseHandler : MonoBehaviour
     public GameObject panel;
     public GameObject intro;
     private CameraTransition _cameraTransition;
-    public GameObject buttonField;
-    private MoveButtons _moveButtons;
-    private DialogueObject kofferBuffer;
-    private DialogueObject bodyBuffer;
+   
+
 
     private void Start()
     {
         _dialogueUI = GetComponent<DialogueUI>();
         _cameraTransition = c.GetComponent<CameraTransition>();
-        _moveButtons = buttonField.GetComponent<MoveButtons>();
     }
 
     public void ShowResponses(Response[] responses)
@@ -87,9 +84,13 @@ public class ResponseHandler : MonoBehaviour
                    break;
                case 30:
                    //Zum Auto
+                   StartCoroutine(Auto(response.DialogueObject));
                    break;
                case 31:
                    //Person aus dem Wagen heben
+                   _dialogueUI.ShowDialogue(response.DialogueObject);
+                   _cameraTransition.bodyInCar.SetActive(false);
+                   _cameraTransition.bodyOnFloor.SetActive(true);
                    break;
                case 40:
                    //Zur Person auf dem Boden
@@ -99,6 +100,8 @@ public class ResponseHandler : MonoBehaviour
                    break;
                case 50:
                    //telefonieren
+                   StartCoroutine(Telefon(response.DialogueObject));
+                   
                    break;
 
            }
@@ -137,6 +140,25 @@ public class ResponseHandler : MonoBehaviour
         panel.SetActive(true);
         _dialogueUI.ShowDialogue(next);
     }
+
+    public IEnumerator Telefon(DialogueObject next)
+    {
+        panel.SetActive(false);
+        _cameraTransition.SwitchState(5);
+        yield return new WaitForSeconds(1);
+        panel.SetActive(true);
+        _dialogueUI.ShowDialogue(next);
+    }
+
+    public IEnumerator Auto(DialogueObject next)
+    {
+        panel.SetActive(false);
+        _cameraTransition.SwitchState(1);
+        yield return new WaitForSeconds(1);
+        panel.SetActive(true);
+        _dialogueUI.ShowDialogue(next);
+    }
+    
 
     void Clicked()
     {

@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
   m_Name: A3
   m_EditorClassIdentifier: 
-  dialogue: []
-  _responses: []
+  dialogue:
+  - Du hebst die Person aus dem Wagen und legst sie achtsam neben dir auf den Boden
+  _responses:
+  - responseText: Zur Person
+    _dialogueObject: {fileID: 0}
+    id: 40
+  - responseText: Telefonieren
+    _dialogueObject: {fileID: 0}
+    id: 50

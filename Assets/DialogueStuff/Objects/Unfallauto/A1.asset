@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
   m_Name: A1
   m_EditorClassIdentifier: 
-  dialogue: []
-  _responses: []
+  dialogue:
+  - Du stehst vor dem Unfallauto, es sitzt eine Person am Steuer, die sich nicht
+    zu bewegen scheint. Was tust du?
+  _responses:
+  - responseText: Versuchen, anzusprechen
+    _dialogueObject: {fileID: 11400000, guid: a57c12f108b181a4687415971a5a539b, type: 2}
+    id: 0
+  - responseText: Die Person aus dem Auto heben
+    _dialogueObject: {fileID: 11400000, guid: 0d405494731474045adcba5c03410820, type: 2}
+    id: 31
