@@ -16,10 +16,10 @@ MonoBehaviour:
   - Die Person atmet!
   _responses:
   - responseText: Person bequemer liegen lassen
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 36d811dc3e2880f4db0569a9f3af47c0, type: 2}
     id: 0
   - responseText: "Person auf den R\xFCcken legen"
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 36d811dc3e2880f4db0569a9f3af47c0, type: 2}
     id: 0
   - responseText: Stabile Seitenlage
     _dialogueObject: {fileID: 11400000, guid: 2684e6eff07a27b489fe5a2226cb83e6, type: 2}

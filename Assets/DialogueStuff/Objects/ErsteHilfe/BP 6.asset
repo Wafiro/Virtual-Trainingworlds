@@ -16,10 +16,10 @@ MonoBehaviour:
   - Die Person liegt sicher auf dem Boden
   _responses:
   - responseText: "Wiederbelebungsma\xDFnahmen vorbereiten"
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: db4ec1c5375c64d4bbc28e11a482eea3, type: 2}
     id: 0
   - responseText: Person mit genug Wasser versorgen
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 773eaa9a04bb7d241ac952f6281fd192, type: 2}
     id: 0
   - responseText: Person (mit Rettungsdecke) zudecken
     _dialogueObject: {fileID: 0}

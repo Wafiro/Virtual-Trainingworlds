@@ -16,6 +16,8 @@ MonoBehaviour:
   - Die Person liegt mit dem Gesicht auf dem Boden.
   _responses:
   - responseText: "Puls pr\xFCfen"
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 315671156f039f64290eeb591d94562f, type: 2}
+    id: 0
   - responseText: Atemwege freimachen
     _dialogueObject: {fileID: 11400000, guid: f82e79c38f3ee4b4bbd2a20413dd8bfb, type: 2}
+    id: 0

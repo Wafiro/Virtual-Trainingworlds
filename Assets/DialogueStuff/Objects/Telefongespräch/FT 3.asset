@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 7
+  m_Name: FT 3
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Ok, vielen Dank. Kontrollieren Sie falls m\xF6glich den Zustand des Verletzten
-    und leisten Sie wenn ben\xF6tigt Erste Hilfe. Wir werdem bald bei Ihnen sein.\""
+  - '"Was ist denn genau mit dem Auto passiert? Bis jetzt sehe ich kein Unfall."'
   _responses:
-  - responseText: Vielen Dank! Mach ich!
-    _dialogueObject: {fileID: 0}
+  - responseText: "\"Ein Auto ist auf der Landstra\xDFe gegen einen Baum gefahren.\""
+    _dialogueObject: {fileID: 11400000, guid: 1feba8a5fb3b99141930d27a6c3cd8ed, type: 2}
+    id: 0
+  - responseText: "Ein Auto ist auf der Landstra\xDFe aus der Bahn geraten"
+    _dialogueObject: {fileID: 11400000}
     id: 0

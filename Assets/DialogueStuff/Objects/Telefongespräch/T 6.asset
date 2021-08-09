@@ -17,7 +17,7 @@ MonoBehaviour:
   - "\"Befindet sich Gefahrengut auf der Stra\xDFe?\""
   _responses:
   - responseText: Ja, Autoteile sind auf der Fahrbahn
-    _dialogueObject: {fileID: 0}
+    _dialogueObject: {fileID: 11400000, guid: 7727a2c20bc9e6f41884c1fb07dd1b2b, type: 2}
     id: 0
   - responseText: Nein
     _dialogueObject: {fileID: 11400000, guid: 169746e7067c3b84f93d2b2d3c761961, type: 2}

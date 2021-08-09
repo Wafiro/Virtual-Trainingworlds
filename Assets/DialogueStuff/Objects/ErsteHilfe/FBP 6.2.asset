@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 7
+  m_Name: FBP 6.2
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Ok, vielen Dank. Kontrollieren Sie falls m\xF6glich den Zustand des Verletzten
-    und leisten Sie wenn ben\xF6tigt Erste Hilfe. Wir werdem bald bei Ihnen sein.\""
+  - Das Rettungsteam hat schon eine bereit!
   _responses:
-  - responseText: Vielen Dank! Mach ich!
-    _dialogueObject: {fileID: 0}
+  - responseText: Ok
+    _dialogueObject: {fileID: 11400000, guid: 2684e6eff07a27b489fe5a2226cb83e6, type: 2}
     id: 0

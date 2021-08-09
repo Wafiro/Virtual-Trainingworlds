@@ -10,19 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 5
+  m_Name: FT 6
   m_EditorClassIdentifier: 
   dialogue:
-  - '"Ok"
-
-    Kurze Stille...'
+  - "Das ist eine L\xFC\xDC\xDCUUUUUge"
   _responses:
-  - responseText: Panisch fragen ob denn endlich Hilfe eintreffen wird
-    _dialogueObject: {fileID: 11400000, guid: 8a3a35f1122108f4cb2b53fa2873bc83, type: 2}
-    id: 0
-  - responseText: "Ruhig auf R\xFCckmeldung warten"
-    _dialogueObject: {fileID: 11400000, guid: eaff08bab590dc64eafe39a653b32a23, type: 2}
-    id: 0
-  - responseText: Fragen wann der Rettungsdienst eintrifft
+  - responseText: :(
     _dialogueObject: {fileID: 11400000, guid: eaff08bab590dc64eafe39a653b32a23, type: 2}
     id: 0

@@ -10,12 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 7
+  m_Name: FBP 0
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Ok, vielen Dank. Kontrollieren Sie falls m\xF6glich den Zustand des Verletzten
-    und leisten Sie wenn ben\xF6tigt Erste Hilfe. Wir werdem bald bei Ihnen sein.\""
+  - '"Person ist tot?
+
+    Nichts mehr was ich tun kann..."'
+  - Bist du sicher...?
   _responses:
-  - responseText: Vielen Dank! Mach ich!
+  - responseText: liegen lassen und warten bis jemand anderes hinzukommt
     _dialogueObject: {fileID: 0}
+    id: 0
+  - responseText: Ok eigentlicht nicht
+    _dialogueObject: {fileID: 11400000, guid: f9e3ad88728e87a4c9cc54d766150af6, type: 2}
     id: 0

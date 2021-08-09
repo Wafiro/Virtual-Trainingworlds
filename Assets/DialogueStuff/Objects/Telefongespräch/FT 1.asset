@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 7
+  m_Name: FT 1
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Ok, vielen Dank. Kontrollieren Sie falls m\xF6glich den Zustand des Verletzten
-    und leisten Sie wenn ben\xF6tigt Erste Hilfe. Wir werdem bald bei Ihnen sein.\""
+  - '"Guten Tag, Polizei hier."'
   _responses:
-  - responseText: Vielen Dank! Mach ich!
-    _dialogueObject: {fileID: 0}
+  - responseText: "Tut mir Leid, ich habe die falsche Nummer gew\xE4hlt  (auflegen) "
+    _dialogueObject: {fileID: 11400000, guid: fcc8493accf9f634b8762e5f2ad799c9, type: 2}
     id: 0

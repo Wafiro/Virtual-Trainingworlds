@@ -16,6 +16,8 @@ MonoBehaviour:
   - Die Person antwortet und reagiert nicht
   _responses:
   - responseText: "Atmung pr\xFCfen"
-    _dialogueObject: {fileID: 11400000, guid: cded2fc174a7f3d489285863ce80a4f2, type: 2}
+    _dialogueObject: {fileID: 11400000, guid: 2a73080506883a149b923d778234049f, type: 2}
+    id: 0
   - responseText: Herz Lungen Wiederbelebung
-    _dialogueObject: {fileID: 11400000}
+    _dialogueObject: {fileID: 11400000, guid: ea10e4479a8c98f448eb0e5928e4ee82, type: 2}
+    id: 0

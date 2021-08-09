@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T0
+  m_Name: FBP 3
   m_EditorClassIdentifier: 
   dialogue:
-  - "Welche Nummer willst du w\xE4hlen?"
-  _responses: []
+  - "Nein! Das ist ganz gef\xE4hrlich!"
+  _responses:
+  - responseText: Ok
+    _dialogueObject: {fileID: 11400000, guid: f82e79c38f3ee4b4bbd2a20413dd8bfb, type: 2}
+    id: 0
