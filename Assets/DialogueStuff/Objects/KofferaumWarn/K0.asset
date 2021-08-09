@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: K0
   m_EditorClassIdentifier: 
   dialogue:
-  - Hier ist dien Kofferraum
+  - Hier ist dein Kofferraum
   _responses:
   - responseText: Warnweste anziehen
     _dialogueObject: {fileID: 11400000, guid: cded2fc174a7f3d489285863ce80a4f2, type: 2}

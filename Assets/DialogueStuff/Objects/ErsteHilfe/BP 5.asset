@@ -23,4 +23,4 @@ MonoBehaviour:
     id: 0
   - responseText: Stabile Seitenlage
     _dialogueObject: {fileID: 11400000, guid: 2684e6eff07a27b489fe5a2226cb83e6, type: 2}
-    id: 0
+    id: 41

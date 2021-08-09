@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: 
   dialogue:
-  - "Es scheint so, als w\xE4re davorne ein Auto gegen einen Baum gefahren."
+  - "Es scheint so, als w\xE4re da vorne ein Auto gegen einen Baum gefahren."
   _responses:
   - responseText: Weiter
     _dialogueObject: {fileID: 11400000, guid: ba306e36039a93349961df2272be640b, type: 2}
