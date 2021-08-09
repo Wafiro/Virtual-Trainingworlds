@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: Intro3
+  m_Name: A finish
   m_EditorClassIdentifier: 
   dialogue:
-  - "Du h\xE4lst den Wagen an, schaltest den Warnblinker ein und steigst aus. Was
-    jetzt?"
+  - Die Person liegt auf dem Boden, von dem Auto geht keine Gefahr aus.
   _responses:
+  - responseText: Zur Person
+    _dialogueObject: {fileID: 11400000, guid: f9e3ad88728e87a4c9cc54d766150af6, type: 2}
+    id: 40
+  - responseText: Telefonieren
+    _dialogueObject: {fileID: 11400000, guid: 7c5a3c091e3d5ea4e98009fc3e68a45d, type: 2}
+    id: 50
   - responseText: Zum Kofferraum
     _dialogueObject: {fileID: 11400000, guid: 4f31f06ac7abd0c4fa9be32b0864f9f7, type: 2}
     id: 20
-  - responseText: Zum Unfallauto
-    _dialogueObject: {fileID: 11400000, guid: e0c8b055c6130e64c96d12493308db50, type: 2}
-    id: 30
-  - responseText: Telefon
-    _dialogueObject: {fileID: 11400000, guid: 7c5a3c091e3d5ea4e98009fc3e68a45d, type: 2}
-    id: 50
+  - responseText: "Ich habe alles n\xF6tige getan"
+    _dialogueObject: {fileID: 11400000, guid: 25b4838bd5e8af0408f2e8501414adb0, type: 2}
+    id: 0

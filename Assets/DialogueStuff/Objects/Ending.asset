@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: EntryTelefon
+  m_Name: Ending
   m_EditorClassIdentifier: 
   dialogue:
-  - Who do you wanna call?
+  - "Du bist fertig mit deinen Erste Hilfe Ma\xDFnahmen. Ob du wohl alles richtig
+    gemacht hast?"
   _responses:
-  - responseText: 112
-    _dialogueObject: {fileID: 11400000, guid: c33c8b550e36f244c857ce1d1f9313e3, type: 2}
-    id: 0
-  - responseText: 110
-    _dialogueObject: {fileID: 11400000, guid: bf4797c96cba0aa44a207049add0991e, type: 2}
+  - responseText: Simulation beenden
+    _dialogueObject: {fileID: 0}
     id: 0

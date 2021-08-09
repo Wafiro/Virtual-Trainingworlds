@@ -22,5 +22,5 @@ MonoBehaviour:
     _dialogueObject: {fileID: 11400000, guid: 773eaa9a04bb7d241ac952f6281fd192, type: 2}
     id: 0
   - responseText: Person (mit Rettungsdecke) zudecken
-    _dialogueObject: {fileID: 0}
-    id: 0
+    _dialogueObject: {fileID: 11400000, guid: f11f8e2e977db964da13af084c1120c8, type: 2}
+    id: 49

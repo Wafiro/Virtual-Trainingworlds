@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: T 1
+  m_Name: BP Finish
   m_EditorClassIdentifier: 
   dialogue:
-  - "\"Bitte warten Sie, bis eine Leitung verf\xFCgbar ist\""
-  - '"Guten Tag, Feuerwehr- und Rettungsdienst hier."'
+  - Die Person ist soweit versorgt. Was jetzt?
   _responses:
-  - responseText: "Tut mir Leid, ich habe die falsche Nummer gew\xE4hlt"
+  - responseText: Telefonieren
     _dialogueObject: {fileID: 11400000, guid: 7c5a3c091e3d5ea4e98009fc3e68a45d, type: 2}
-    id: 0
-  - responseText: '"Hallo, ich bin Max Mustermann und hier ist ein Unfall passiert"'
-    _dialogueObject: {fileID: 11400000, guid: 8fd0891462990ee4696643daebe21579, type: 2}
+    id: 50
+  - responseText: Zum Kofferraum
+    _dialogueObject: {fileID: 11400000, guid: 4f31f06ac7abd0c4fa9be32b0864f9f7, type: 2}
+    id: 20
+  - responseText: "Ich habe alles n\xF6tige getan"
+    _dialogueObject: {fileID: 11400000, guid: 25b4838bd5e8af0408f2e8501414adb0, type: 2}
     id: 0
