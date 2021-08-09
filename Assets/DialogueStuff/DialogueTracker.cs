@@ -52,6 +52,22 @@ public class DialogueTracker : MonoBehaviour
             _dialogueOrder.Add(key);
         }
     }
+    public IReadOnlyList<DialogueOrder.OrderResult> check(IReadOnlyCollection<DialogueOrder.DialogueOrder> constraints)
+    {
+        List<DialogueOrder.OrderResult> result = new List<DialogueOrder.OrderResult>();
+        foreach (var current in _dialogueOrder)
+        {
+            if (_responseMap.TryGetValue(current, out var responses))
+            {
+                result.Add(
+                    new DialogueOrder.OrderResult(current,
+                        constraints.Where(t => responses.Contains(t.current) && !t.IsCorrect(responses)).ToList()
+                    )
+                );
+            }
+        }
+        return result;
+    }
 }
 
 namespace DialogueOrder
@@ -111,6 +127,16 @@ namespace DialogueOrder
         public override bool IsCorrect(IReadOnlyList<ulong> order)
         {
             return !order.Contains(base.current);
+        }
+    }
+    public class OrderResult
+    {
+        public DialogueObject dialogueObject;
+        public List<DialogueOrder> failed;
+        public OrderResult(DialogueObject dialogueObject, IReadOnlyList<DialogueOrder> failed)
+        {
+            this.dialogueObject = dialogueObject;
+            this.failed = failed.ToList();
         }
     }
 }
