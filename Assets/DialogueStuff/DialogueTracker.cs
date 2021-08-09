@@ -20,6 +20,8 @@ public class DialogueTracker : MonoBehaviour
     {
         // Set reference to responseHandler.
         _handler = this.GetComponent<ResponseHandler>();
+        _responseMap = new Dictionary<DialogueObject, List<ulong>>();
+        _dialogueOrder = new List<DialogueObject>();
     }
     // Initialize connections.
     void Start()
@@ -54,7 +56,7 @@ public class DialogueTracker : MonoBehaviour
 
 namespace DialogueOrder
 {
-    abstract class DialogueOrder
+    public abstract class DialogueOrder
     {
         public readonly ulong current;
         public DialogueOrder(ulong current)
@@ -63,7 +65,7 @@ namespace DialogueOrder
         }
         public abstract bool IsCorrect(IReadOnlyList<ulong> order);
     }
-    class RequireBefore : DialogueOrder
+    public class RequireBefore : DialogueOrder
     {
         public RequireBefore(ulong current, ulong before) :
             base(current)
@@ -76,7 +78,7 @@ namespace DialogueOrder
             return order.SkipWhile(x => x != before).Contains(base.current);
         }
     }
-    class RequireAfter : DialogueOrder
+    public class RequireAfter : DialogueOrder
     {
         public RequireAfter(ulong current, ulong after) :
             base(current)
@@ -89,7 +91,7 @@ namespace DialogueOrder
             return order.SkipWhile(x => x != base.current).Contains(after);
         }
     }
-    class Require : DialogueOrder
+    public class Require : DialogueOrder
     {
         public Require(ulong current) :
             base(current)
@@ -100,7 +102,7 @@ namespace DialogueOrder
             return order.Contains(base.current);
         }
     }
-    class Deny : DialogueOrder
+    public class Deny : DialogueOrder
     {
         public Deny(ulong current) :
             base(current)
