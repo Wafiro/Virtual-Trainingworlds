@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: W2
+  m_Name: W1
   m_EditorClassIdentifier: 
   dialogue:
-  - In Welcher Distanz willst du das Warndreieck aufstellen?
+  - In welcher Entfernung willst du das Warndreieck aufstellen?
   _responses:
   - responseText: 50m
-    _dialogueObject: {fileID: 11400000, guid: 329e32fb6907872499f0ae47ad93cebe, type: 2}
+    _dialogueObject: {fileID: 11400000, guid: 4058aede814e1204fbbb8a6437720838, type: 2}
+    id: 21
   - responseText: 100m
-    _dialogueObject: {fileID: 11400000, guid: 329e32fb6907872499f0ae47ad93cebe, type: 2}
+    _dialogueObject: {fileID: 11400000, guid: 4058aede814e1204fbbb8a6437720838, type: 2}
+    id: 21
   - responseText: 400m
-    _dialogueObject: {fileID: 11400000, guid: 329e32fb6907872499f0ae47ad93cebe, type: 2}
+    _dialogueObject: {fileID: 11400000, guid: 4058aede814e1204fbbb8a6437720838, type: 2}
+    id: 21

@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: K0
+  m_Name: Intro3
   m_EditorClassIdentifier: 
   dialogue:
-  - Hier ist dien Kofferraum
+  - "Du h\xE4lst den Wagen an, schaltest den Warnblinker ein und steigst aus. Was
+    jetzt?"
   _responses:
-  - responseText: Warnweste anziehen
-    _dialogueObject: {fileID: 11400000, guid: cded2fc174a7f3d489285863ce80a4f2, type: 2}
-  - responseText: Warndreieck nehmen
-    _dialogueObject: {fileID: 11400000, guid: a279303e2820019459626bd0fbe52881, type: 2}
+  - responseText: Zum Kofferraum
+    _dialogueObject: {fileID: 11400000, guid: 4f31f06ac7abd0c4fa9be32b0864f9f7, type: 2}
+    id: 20
+  - responseText: Zum Unfallauto
+    _dialogueObject: {fileID: 0}
+    id: 30
+  - responseText: Telefon
+    _dialogueObject: {fileID: 0}
+    id: 0

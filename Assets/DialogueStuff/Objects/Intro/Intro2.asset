@@ -10,8 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0899a980713597e4985a70af01769a07, type: 3}
-  m_Name: IntroFail
+  m_Name: Intro2
   m_EditorClassIdentifier: 
   dialogue:
-  - Nicht sehr vorbildlich
-  _responses: []
+  - Was wirst du tun?
+  _responses:
+  - responseText: Anhalten und aussteigen
+    _dialogueObject: {fileID: 11400000, guid: e310a5877617b2b47aa1bd7a120d5676, type: 2}
+    id: 0
+  - responseText: Weiterfahren
+    _dialogueObject: {fileID: 11400000, guid: f977fecf366310148a1c05f5e4c8cc86, type: 2}
+    id: 0
