@@ -22,6 +22,8 @@ public class ResponseHandler : MonoBehaviour
     private CameraTransition _cameraTransition;
     public GameObject buttonField;
     private MoveButtons _moveButtons;
+    private DialogueObject kofferBuffer;
+    private DialogueObject bodyBuffer;
 
     private void Start()
     {
@@ -83,11 +85,20 @@ public class ResponseHandler : MonoBehaviour
                    Debug.Log("animation");
                    StartCoroutine(Warndreieck(response.DialogueObject));
                    break;
+               case 30:
+                   //Zum Auto
+                   break;
                case 31:
                    //Person aus dem Wagen heben
                    break;
+               case 40:
+                   //Zur Person auf dem Boden
+                   break;
                case 41:
                    //Stabile Seitenlage
+                   break;
+               case 50:
+                   //telefonieren
                    break;
 
            }
