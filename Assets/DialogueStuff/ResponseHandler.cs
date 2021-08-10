@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Playables;
 using System;
+using UnityEngine.SceneManagement;
 
 public class ResponseHandler : MonoBehaviour
 {
@@ -133,6 +134,7 @@ public class ResponseHandler : MonoBehaviour
                    break;
                case 99:
                    //do ending stuff here
+                   SceneManager.LoadScene(2);
                    break;
 
            }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FBP 6.2
   m_EditorClassIdentifier: 
   dialogue:
-  - Das Rettungsteam hat schon eine bereit!
+  - "Das solltest du dem Rettungsdienst \xFCberlassen"
   _responses:
   - responseText: Ok
     _dialogueObject: {fileID: 11400000, guid: 2684e6eff07a27b489fe5a2226cb83e6, type: 2}

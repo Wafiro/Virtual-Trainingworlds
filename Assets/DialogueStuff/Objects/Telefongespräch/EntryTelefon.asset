@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EntryTelefon
   m_EditorClassIdentifier: 
   dialogue:
-  - Who do you wanna call?
+  - Wen willst du anrufen?
   _responses:
   - responseText: 112
     _dialogueObject: {fileID: 11400000, guid: c33c8b550e36f244c857ce1d1f9313e3, type: 2}

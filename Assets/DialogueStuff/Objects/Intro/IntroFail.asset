@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IntroFail
   m_EditorClassIdentifier: 
   dialogue:
-  - Nicht sehr vorbildlich
+  - "Du f\xE4hrst vorbei und \xFCberl\xE4sst dem Unfallopfer seinem Schicksal"
   _responses:
   - responseText: Simulation beenden
     _dialogueObject: {fileID: 11400000, guid: 25b4838bd5e8af0408f2e8501414adb0, type: 2}
